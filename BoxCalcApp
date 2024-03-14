@@ -1,0 +1,13 @@
+import SwiftUI
+
+@main
+struct BoxCalcApp: App {
+    @StateObject var size = Sizes()
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environmentObject(size)
+        }
+    }
+}
